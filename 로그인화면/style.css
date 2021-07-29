@@ -1,0 +1,47 @@
+body {
+    margin: 0 auto;
+    width: fit-content;
+}
+header, footer {
+    margin-top: 20px;
+    text-align: center;
+}
+.member-wrapper {
+    display: block;
+}
+.member-field-wrap input {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: solid 2px gray;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    outline: none;
+}
+.member-field-wrap input:focus {
+    border: solid 2px #28a0ff;
+}
+.warn_txt {
+    display: none;
+    margin: 0;
+    font-size: small;
+}
+
+.block_txt {
+    display: block;
+    color: red;
+}
+
+.join-footer button {
+    font-size: 16px;
+    width: 100%;
+    background-color: #28a0ff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 32px;
+}
+ul {
+    border: 1px solid gray;
+    padding: 10px;
+}

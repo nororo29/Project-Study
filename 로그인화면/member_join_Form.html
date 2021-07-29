@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="member_join.js"></script>
+</head>
+
+
+<body>
+    
+    <div class="member-wrapper">
+        <header class="member-header">
+            <h1 class="member-logo">
+                <a href="">
+                    <img src="" alt="">Coopang
+                </a>
+            </h1>
+        </header>
+
+        <div class="member-main">
+            <form name="memForm" action="member-join-form.html">
+
+                <div class="section-title">
+                    <p>회원정보를 입력해주세요.</p>
+                </div>
+
+                <div class="join_content">
+                    <div class="section-body">
+                        <div class="member-field-wrap">
+                            <input type="email" name="mem_email" id="mem_email" placeholder="아이디(이메일)">
+                            <p class="warn_txt"></p>
+                        </div>
+                        <div class="member-field-wrap">
+                            <input type="password" name="mem_pwd" id="mem_pwd" placeholder="비밀번호">
+                        </div>
+                        <div class="member-field-wrap">
+                            <input type="password" name="mem_pwd_confirm" id="mem_pwd_confirm" placeholder="비밀번호 확인">
+                            <p class="warn_txt" id="pwd_conf_warn_txt">확인을 위해 새 비밀번호를 다시 입력해주세요.</p>
+                        </div>
+                        <div class="member-field-wrap">
+                            <input type="text" name="mem_name" id="mem_name" placeholder="이름">
+                            <p class="warn_txt"></p>
+                        </div>
+                        <div class="member-field-wrap">
+                            <input type="tel" name="mem_phone" id="mem_phone" placeholder="전화번호">
+                            <p class="warn_txt"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="join-confirm">
+                    <div style="margin-bottom: 10px;">
+                        <p>서비스약관에 동의해주세요.</p>
+                    </div>
+                    <div class="checkAll">
+                        <input type="checkbox" name="confirmAll" value=""> 모두 동의합니다.
+                    </div>
+                    <ul>
+                        <div>
+                            <input type="checkbox" name="confirm" class="confirm" value=""> [필수] 만 14세 이상입니다
+                        </div>
+                        <div>
+                            <input type="checkbox" name="confirm" class="confirm" value=""> [필수] 쿠팡 이용약관 동의
+                        </div>
+                        <div>
+                            <input type="checkbox" name="confirm" class="confirm" value=""> [필수] 전자금융거래 이용약관 동의
+                        </div>
+                        <div>
+                            <input type="checkbox" name="confirm" class="confirm" value=""> [필수] 개인정보 수집 및 이용 동의
+                        </div>
+                        <div>
+                            <input type="checkbox" name="confirm" class="confirm" value=""> [필수] 개인정보 제공 동의
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="join-footer">
+                    <button type="button" id="join_button">동의하고 가입하기</button>
+                </div>
+
+            </form>
+        </div>
+
+        <footer class="member-footer">
+            <div>&copy; Coopang Corp. All rights reserved</div>
+        </footer>
+    </div>
+
+</body>
+</html>
